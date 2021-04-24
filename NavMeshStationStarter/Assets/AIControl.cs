@@ -11,6 +11,7 @@ public class AIControl : MonoBehaviour
     void Start()
     {
         agent = this.GetComponent<NavMeshAgent>();
+        
     }
 
     // Update is called once per frame
@@ -18,4 +19,6 @@ public class AIControl : MonoBehaviour
     {
         
     }
+
+    //Controla o NavMeshAgent pra ele ser detectado
 }

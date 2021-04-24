@@ -8,11 +8,12 @@ public class AgentManager : MonoBehaviour
     
     void Start () 
     {
-        agents= GameObject.FindGameObjectsWithTag("ai");
+        agents= GameObject.FindGameObjectsWithTag("ai"); //verifica a tag ai para o agent andar
+        
     }
     void Update () 
     {
-        if(Input.GetMouseButtonDown(0)) 
+        if(Input.GetMouseButtonDown(0)) //verifica o click no mapa para realizar o deslocamento
         {
             RaycastHit hit;
             if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 100))
